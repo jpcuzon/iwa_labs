@@ -14,16 +14,9 @@ let email = [];
     try{
         const {data} = await axios.get("https://jsonplaceholder.typicode.com/users");
         users = data.map(user=>user.name)
+        email = data.map(user=>user.email)
     }catch(error){
         console.log(error)
     }
 })();
 
-(async function getEmail(){
-    try{
-        const {data} = await axios.get("https://jsonplaceholder.typicode.com/users");
-        email = data.map(user=>user.email)
-    }catch(error){
-        console.log(error)
-    }
-})()
