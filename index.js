@@ -3,7 +3,7 @@ axios = require("axios");
 
 http.createServer((req,res)=>{ 
     res.write(users.join(", "));
-    res.write(email.join(", "));
+    res.write("\n\n"+email.join(", "));
     res.end()
 }).listen(8000);
 
