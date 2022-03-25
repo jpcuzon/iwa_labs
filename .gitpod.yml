@@ -3,12 +3,10 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 image:
-  file: .gitpod.DockerFile
-
+  file: .gitpod.Dockerfile
 tasks:
-  - name: Running Mongo
+  - name: Running MongoDB
     command: mkdir -p data && mongod --dbpath data
-  - name: Installing NodeMon
+  - name: Install nodemon
     command: npm i -g nodemon && npm start
-
 
