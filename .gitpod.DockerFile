@@ -1,0 +1,1 @@
+FROM github/workspace-mongodb
