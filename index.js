@@ -6,7 +6,7 @@ const   http = require("http"),
         dotenv = require("dotenv");
 
 let app = express();
-let port = process.env.PORT || c8000;
+let port = process.env.PORT || 8000;
 
 dotenv.config();
 
